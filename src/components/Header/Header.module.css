@@ -1,0 +1,17 @@
+.header {
+	position: relative;
+	padding: 27px 0;
+	background: #FFFFFF;
+	box-shadow: 0px 1px 20px rgba(72, 3, 38, 0.07);
+	z-index: 1;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.buttons {
+	display: flex;
+	gap: 30px
+}

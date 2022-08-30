@@ -1,0 +1,9 @@
+.text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #000000;
+}
+.text:not(:last-child) {
+	margin-bottom: 8px;
+}

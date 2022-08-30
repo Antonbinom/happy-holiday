@@ -1,0 +1,11 @@
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (max-width: 480px){
+	.wrapper {
+		flex-direction: column-reverse;
+	}
+}

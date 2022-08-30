@@ -1,0 +1,20 @@
+.text {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	max-width: 304px;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	color: #000000;
+	transform: translate(-50%, -50%);
+}
+
+@media(max-width: 991px){
+.text {
+font-size: 16px;
+	line-height: 22px;
+}
+}

@@ -1,0 +1,9 @@
+.socials {
+	display: flex;
+	justify-content: space-between;
+	width: 192px;
+}
+
+.link {
+	color: #00C78B
+}
