@@ -1,3 +1,6 @@
+.footer {
+	display: block;
+}
 .wrapper {
 	display: flex;
 	justify-content: space-between;

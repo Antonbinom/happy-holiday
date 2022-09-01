@@ -6,7 +6,7 @@ import {ReactComponent as StumbleIcon} from './img/stumbleupon.svg';
 
 export const Socials = () => (
 	<ul className={style.socials}>
-		<li className={style.item}>
+		<li>
 			<a href='https://vk.com' target='blank' className={style.link}>
 				<VKIcon />
 			</a>

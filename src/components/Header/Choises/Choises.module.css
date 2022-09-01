@@ -1,0 +1,55 @@
+.wrapper {
+	position: relative;
+}
+
+.list {
+	position: absolute;
+	top: 50px;
+
+	width: 300px;
+	padding: 20px 52px;
+
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+	color: #FFFFFF;
+
+	border-radius: 30px;
+	background: #00C78B;
+	border: none;
+}
+
+.item {
+	padding: 5px 0;
+	cursor: pointer;
+}
+.item:not(:last-child) {
+	margin-bottom: 10px;
+	transition: color ease 0.3s;
+}
+
+.item:hover {
+	color: hsla(64, 86%, 66%, 0.992)
+}
+
+.button {
+	width: 300px;
+	padding: 20px;
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 30px;
+	background: #00C78B;
+	border: none;
+	gap: 30px;
+}
+
+@media(max-width: 991px){
+	.button {
+		width: auto;
+		gap: 20px;
+		font-size: 16px;
+		line-height: 21px;
+	}
+}

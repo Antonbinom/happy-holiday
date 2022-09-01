@@ -1,17 +1,30 @@
-import style from './Text.module.css';
+import PropTypes, {oneOfType} from 'prop-types';
+import {createContext, useState} from 'react';
 
-export const Text = () => (
-	<p className={style.text}>
+export const textContext = createContext({});
+
+export const TextContextProvider = ({children}) => {
+	const [text, setText] = useState(`
 		Поздравляю с днем рожденья!
 		Пусть будет жизнь полна веселья,
 		Не будет грусти и хлопот,
 		А только счастье круглый год!
-		<br />
-		<br />
+
 		Желаю творческих успехов,
 		Прекрасных дней, улыбок, смеха.
 		Любви, душевного тепла,
 		Как сказка, чтобы жизнь была!
+	`);
 
-	</p>
-);
+	return (
+		<textContext.Provider value={{text, setText}}>
+			{children}
+		</textContext.Provider>
+	);
+};
+
+TextContextProvider.propTypes = {
+	children: oneOfType([
+		PropTypes.object,
+	])
+};

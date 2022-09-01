@@ -1,16 +1,14 @@
 import {Container} from '../Container/Container';
 import style from './Card.module.css';
-import {Image} from './Image/Image';
-import {Text} from './Text/Text';
+import {ImageCard} from './ImageCard/ImageCard';
+import {Felicitation} from './Felicitation/Felicitation';
 
 export const Card = () => (
 	<div className={style.card}>
 		<Container>
-			<div className={style.wrapper}>
-				<Image>
-					<Text />
-				</Image>
-			</div>
+			<ImageCard >
+				<Felicitation />
+			</ImageCard>
 		</Container>
 	</div>
 );

@@ -1,5 +1,5 @@
 import style from './Container.module.css';
-import PropTypes from 'prop-types';
+import PropTypes, {oneOfType} from 'prop-types';
 
 export const Container = ({children}) => (
 	<div className={style.container}>
@@ -8,5 +8,8 @@ export const Container = ({children}) => (
 );
 
 Container.propTypes = {
-	children: PropTypes.object,
+	children: oneOfType([
+		PropTypes.array,
+		PropTypes.object,
+	])
 };

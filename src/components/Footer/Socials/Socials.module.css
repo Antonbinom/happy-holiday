@@ -5,5 +5,11 @@
 }
 
 .link {
-	color: #00C78B
+	color: #00C78B;
+	transition: all ease 0.2s;
+	cursor: pointer;
+}
+
+.link:hover {
+color: #088761;
 }
