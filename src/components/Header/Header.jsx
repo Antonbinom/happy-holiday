@@ -1,7 +1,7 @@
 import style from './Header.module.css';
-import {Container} from '../Container/Container';
-import {Button} from './Button/Button';
-import {Choises} from './Choises/Choises';
+import Container from '../Container';
+import Button from './Button';
+import Choises from './Choises';
 
 export const Header = () => (
 	<div className={style.header}>

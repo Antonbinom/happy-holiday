@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types';
-import {createContext, useState} from 'react';
-import cardImg from '../components/Card/ImageCard/img/card-bg.jpg';
+import {createContext, useContext} from 'react';
+import {useImg} from '../hooks/useImg';
+import {holidayContext} from './holidayContext';
 
 export const imageContext = createContext({});
 
 export const ImageContextProvider = ({children}) => {
-	const [image, setImage] = useState(cardImg);
+	const {holiday} = useContext(holidayContext);
+	const [image, setImage] = useImg(holiday);
 
 	return (
 		<imageContext.Provider value={{image, setImage}}>

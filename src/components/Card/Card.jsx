@@ -1,7 +1,7 @@
-import {Container} from '../Container/Container';
+import Container from '../Container';
 import style from './Card.module.css';
-import {ImageCard} from './ImageCard/ImageCard';
-import {Felicitation} from './Felicitation/Felicitation';
+import ImageCard from './ImageCard';
+import Felicitation from './Felicitation';
 
 export const Card = () => (
 	<div className={style.card}>

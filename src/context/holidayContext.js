@@ -1,18 +1,27 @@
-import PropTypes from 'prop-types';
+import PropTypes, {oneOfType} from 'prop-types';
 import {createContext, useState} from 'react';
+import {useHolidays} from '../hooks/useHolidays';
 
 export const holidayContext = createContext({});
 
 export const HolidayContextProvider = ({children}) => {
-	const [holiday, setHoliday] = useState('Выбрать праздник');
+	const [holiday, setHoliday] = useState('');
+	const [holidays] = useHolidays();
+
+	const changeHoliday = title => {
+		setHoliday(title);
+	};
 
 	return (
-		<holidayContext.Provider value={{holiday, setHoliday}}>
+		<holidayContext.Provider value={{holiday, holidays, changeHoliday}}>
 			{children}
 		</holidayContext.Provider>
 	);
 };
 
 HolidayContextProvider.propTypes = {
-	children: PropTypes.object,
+	children: oneOfType([
+		PropTypes.array,
+		PropTypes.object,
+	])
 };

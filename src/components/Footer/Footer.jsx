@@ -1,7 +1,7 @@
 import style from './Footer.module.css';
-import {Container} from '../Container/Container';
-import {Info} from './Info/Info';
-import {Socials} from './Socials/Socials';
+import Container from '../Container';
+import Info from './Info';
+import Socials from './Socials';
 
 export const Footer = () => (
 	<div className={style.footer}>
