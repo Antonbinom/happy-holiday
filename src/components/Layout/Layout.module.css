@@ -1,0 +1,9 @@
+.btn {
+	display: block;
+	max-width: max-content;
+	margin: 0 auto;
+	padding: 10px 25px;
+	color: #909090;
+	background: gold;
+	border-radius: 15px;
+}

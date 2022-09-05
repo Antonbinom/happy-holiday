@@ -1,12 +1,17 @@
-import Footer from './components/Footer';
-import Header from './components/Header';
 import Card from './components/Card';
+import {Route, Routes} from 'react-router-dom';
+import {EmptyCard} from './components/EmptyCard/EmptyCard';
+import {Layout} from './components/Layout/Layout';
 
 const App = () => (
 	<>
-		<Header />
-		<Card />
-		<Footer />
+		<Routes>
+			<Route path='/' element={<Layout />}>
+				<Route index element={<EmptyCard />} />
+				<Route path='card/:holiday' element={<Card />} />
+			</Route>
+			<Route path='singleCard/:idText/:idImg' element={<Card />} />
+		</Routes>
 	</>
 );
 

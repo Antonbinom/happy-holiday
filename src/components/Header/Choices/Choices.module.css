@@ -32,6 +32,9 @@
 	color: hsla(64, 86%, 66%, 0.992)
 }
 
+.activeLink {
+	color: gold;
+}
 .button {
 	width: 300px;
 	padding: 20px;
