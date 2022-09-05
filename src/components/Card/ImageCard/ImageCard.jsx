@@ -1,15 +1,13 @@
 import style from './ImageCard.module.css';
 import PropTypes from 'prop-types';
-import {useContext} from 'react';
-import {imageContext} from '../../../context/imageContext';
 import imageBG from './img/card-bg.jpg';
+import {useSelector} from 'react-redux';
 
 export const ImageCard = ({children}) => {
-	const {image} = useContext(imageContext);
-
+	const {urlImg, loading} = useSelector(state => state.image);
 	return (
 		<div className={style.image}>
-			<img src={image || imageBG} />
+			<img src={loading === 'loading' ? imageBG : urlImg || imageBG} />
 			{children}
 		</div>
 	);

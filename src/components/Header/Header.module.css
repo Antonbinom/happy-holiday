@@ -15,3 +15,30 @@
 	display: flex;
 	gap: 30px
 }
+
+.button {
+	width: 300px;
+	padding: 20px;
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 30px;
+	background: #00C78B;
+	border: none;
+	gap: 30px;
+}
+
+.button:disabled {
+	background: rgb(202, 194, 194);
+	cursor: auto;
+}
+
+@media(max-width: 991px){
+	.button {
+		width: auto;
+		gap: 20px;
+		font-size: 16px;
+		line-height: 21px;
+	}
+}
