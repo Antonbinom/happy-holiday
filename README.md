@@ -19,5 +19,5 @@ Pet-проект React SPA.
 
 ### Запуск `npm run start`
 
-## <a href="https://happy-holiday-theta.vercel.app/">Ссылка</a>
+## <a href="https://happy-holiday-theta.vercel.app/" target="_blank">Ссылка</a>
 
