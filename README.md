@@ -12,10 +12,11 @@ Pet-проект React SPA.
 ## Стек технологий
 
 - React
-- Redux
-- React-router
+- Redux - хранилище состояний компонентов
+- React-router - загрузка страниц без перезагрузки
 - React-hooks
-- Rest API
+- Custom-hooks
+- Axios - Rest-API
 
 ### Запуск `npm run start`
 
